@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+<style>
+body {
+    background-color: lightblue;
+}
+#description {
+   font-size: 20px; 
+   padding-top: 10px;
+}
+#fff {
+    margin: 2% 10% 2% 10%;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    height : auto;
+    padding-bottom: 20px;
+}
+button {
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: lightblue;
+    height: 3rem;
+    width: 5rem;
+    color: black;
+    font-size: 100%;
+}
+input {
+    height: 4vh;
+    width: 16vw;
+    /* border-radius: 2%; */
+}
+</style>
+<body>
+    <div>
+        <center><h1 id='title'>
+            Survey Form
+        </h1></center>
+        <div id = 'fff'>
+             <center><p id = 'description'>Let us know how is our software</p></center>
+    <center>
+            <form  id="survey-form">
+      <label id="name-label">Name:</label>
+      <input
+      id='name' 
+      name='name'
+      type='text'
+      placeholder="Your Name"
+      />
+      <br/>
+      <br/>
+      <label id="email-label">Email:</label>
+      <input
+      id='email' 
+      name='email'
+      type='email'
+      placeholder="Your Email"
+      />
+      <br/>
+      <br/>
+      <label id="age-lable">Age:</label>
+      <input
+      id='number' 
+      name='age'
+      type='number'
+      min="18"
+      max="40"
+      placeholder="Your Age"
+      />
+      <br/>
+      <br/>
+      <label>Which option best discribe your role:</label>
+      <select id='dropdown'>
+            <option >Student</option>
+            <option >Fulltime-Job</option>
+            <option >Parttime-Job</option>
+            <option >Other</option>
+          </select>
+          <br/>
+          <br/>
+          <label>Recommend Us?</label>
+          <div style="display: flex; flex-direction: column; align-items:baseline;">
+          <div><input type="radio" name="re" value="y">Yes</div>
+          <div><input type="radio" name="re" value="n">No</div>
+          <div><input type="radio" name="re" value="o">Other</div>
+          </div>
+          <br/>
+      <br/>
+      <label>Improvement:</label>
+      <input type="checkbox" name="vehicle1" value="frontend"> Frontend<br>
+  <input type="checkbox" name="vehicle2" value="backend"> Backend<br>
+  <input type="checkbox" name="vehicle3" value="database" checked> Database<br><br>
+  <label>Comments:</label>
+  <textarea rows='5' cols="50">
+
+  </textarea>
+  <br>
+  <button type="submit">Submit</button>
+    </form>
+    </center>
+    </div>
+    </div>
+</body>
+</html>
